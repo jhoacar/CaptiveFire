@@ -39,6 +39,7 @@ h2 span {
 #contacto {
 	padding-top: 60px;
 	padding-bottom: 40px;
+	overflow: hidden;
 }
 /* end servicio implementacion nosotros soporte contacto */
 
