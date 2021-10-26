@@ -301,6 +301,10 @@ header .social-icon li a {
 #implementacion .implementacion-wrapper .implementacion-des p {
 	padding-top: 10px;
 }
+#implementacion .implementacion-wrapper .implementacion-des a {
+	color: #28a7e9;
+}
+
 
 /* end implementacion */
 
