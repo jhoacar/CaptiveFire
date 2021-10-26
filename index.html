@@ -83,7 +83,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-offset-0 col-md-8">
-					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s" style="font-size: 30px;">
+					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
 						Nosotros hacemos redireccionamiento<br><span>seguro</span>
 					</h1>
 					<div class="element">
@@ -110,16 +110,17 @@
 				<video controls preload="none" poster="images/logo.png" width="100%" style="margin-bottom: 10px;">
 					<source src="video/description_video.mp4" type="video/mp4">
 				</video>
-				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+				<div class="col-md-3 col-sm-3 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
 					<div class="media">
 						<div class="media-heading-wrapper">
 							<div class="media-object pull-left">
 								<i class="fa fa-wifi"></i>
 							</div>
 							<h3 class="media-heading">PORTAL CAUTIVO</h3>
-						</div>
-						<div class="media-body text-justify">
-							<p>CaptiveFire es un firewall encargado de llevar a los clientes
+						</div><br>
+						<div class="media-body">
+							<p class="text-justify">
+								CaptiveFire es un firewall encargado de llevar a los clientes
 								que se conecten a su red a una pagina de su procedencia,
 								realizando la acción de un portal cautivo, con la eficiencia
 								de poder garantizarle el control de su red.
@@ -127,30 +128,51 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+				<div class="col-md-3 col-sm-3 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<div class="media">
+						<div class="media-heading-wrapper">
+							<div class="media-object pull-left">
+								<i class="fa fa-dollar"></i>
+							</div>
+							<h3 class="media-heading">UNICA INSTALACION</h3>
+						</div>
+						<div class="media-body">
+							<p class="text-justify">
+								Por el precio de <strong>10.000 (ARS)</strong> puede
+								llevar la configuracion, completa de su equipo, con todas
+								sus especificaciones, soporte y seguridad.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
 					<div class="media">
 						<div class="media-heading-wrapper">
 							<div class="media-object pull-left">
 								<i class="fa fa-html5"></i>
 							</div>
-							<h3 class="media-heading">PAGINA</h3>
+							<h3 class="media-heading">PAGINA DE BIENVENIDA</h3>
 						</div>
 						<div class="media-body">
-							<p>Toda conexion que se relice directamente a su red, sera
-								redirigida a una pagina que se establezca o decida contratar.</p>
+							<p class="text-justify">
+								Toda conexion que se relice directamente a su red, sera
+								redirigida a una pagina que se establezca o decida contratar,
+								pudiendo estar aojada en Internet o en algun dispositivo local.
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+				<div class="col-md-3 col-sm-3 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
 					<div class="media">
 						<div class="media-heading-wrapper">
 							<div class="media-object pull-left">
 								<i class="fa fa-ban"></i>
 							</div>
-							<h3 class="media-heading">PRIVACIDAD</h3>
+							<h3 class="media-heading">CONTROL DE PRIVACIDAD</h3>
 						</div>
 						<div class="media-body">
-							<p>Se puede controlar que uso de internet se le puede permitir
+							<p class="text-justify">
+								Se puede controlar que uso de internet se le puede permitir
 								a distintas redes, pudiendo ser, públicas o privadas.</p>
 						</div>
 					</div>
@@ -173,8 +195,24 @@
 					<div class="implementacion-wrapper">
 						<div class="implementacion-des">
 							<span class="text-center">EQUIPAMIENTO</span>
-							<img src="images/implementacion-img1.jpg" class="img-responsive" width="100%"
-								alt="implementacion img 1">
+							<div class="images">
+								<div class="text-center">
+									<img src="images/router(1).png" alt="Router 2" height="100px"><br>
+									<strong class="text-center">Raspberry PI</strong>
+								</div>
+								<div class="text-center">
+									<img src="images/router(2).png" alt="Router 2" height="100px"><br>
+									<strong class="text-center">TP-Link Archer C7</strong>
+								</div>
+								<div class="text-center">
+									<img src="images/router(3).png" alt="Router 3" height="100px"><br>
+									<strong class="text-center">TP-Link TL-MR3020</strong>
+								</div>
+								<div class="text-center">
+									<img src="images/router(4).png" alt="Router 4" height="100px"><br>
+									<strong class="text-center">TP-Link Archer A6</strong>
+								</div>
+							</div>
 							<p class="text-justify">
 								Al momento de contratar el servicio, nos encargaremos
 								de la configuracion de todos sus dispositivos de red,
@@ -183,22 +221,43 @@
 								usado por nosotros, dado el caso de incompatibilidad,
 								se reemplazaran por alguno compatible y con las
 								mismas caracteristicas.
+								<br>
+								Para mas informacion sobre dispositivos compatibles con
+								el sistema, le recomendamos buscar el equipo en la 
+								<a href="https://openwrt.org/toh/views/toh_available_16128">tabla de hardware recomendado</a>.
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s"
-				style="margin-bottom:10px">
+					style="margin-bottom:10px">
 					<div class="implementacion-wrapper">
 						<div class="implementacion-des">
 							<span class="text-center">INFRAESTRUCTURA</span>
-							<img src="images/implementacion-img2.jpg" class="img-responsive" width="100%"
-								alt="implementacion img 2">
+							<div class="images">
+								<div class="text-center">
+									<img src="images/wifi_free.png" alt="Free Wifi" height="100px"><br>
+									<strong class="text-center">Red Publica</strong>
+								</div>
+								<div class="text-center">
+									<img src="images/wifi_private.png" alt="Private Wifi" height="100px"><br>
+									<strong class="text-center">Red Privada</strong>
+								</div>
+								<div class="text-center">
+									<img src="images/wifi_mixto.png" alt="Mix Wifi" height="100px"><br>
+									<strong class="text-center">Red Mixta</strong>
+								</div>
+							</div>
 							<p class="text-justify">
 								Con la revision de sus equipos de red, ud podra escoger
 								la infraestructura que mejor se adecue a sus necesidades,
 								dando asi acceso a Internet, muy bien parcial o totalmente
 								en algunos o todos sus dispositivos de red.
+								<br>
+								La infraestructura puede estar alojada en <strong>Internet</strong>
+								o en <strong>Local</strong>; cabe destacar que en el caso <strong>Local</strong>
+								se hara uso de algun dispositivo como servidor, pudiendo ser
+								una <strong>Raspberry PI</strong>.
 							</p>
 						</div>
 					</div>
@@ -215,7 +274,7 @@
 				<div class="col-md-12">
 					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">SOBRE <span>NOSOTROS</span></h2>
 				</div>
-				<div class="col-md-6 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s" style="margin:20px;">
+				<div class="col-md-6 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s" style="margin:0px;">
 					<i class="fa fa-beer" style="margin:10px 10px 10px 0px;"></i>
 					<h4>CARTA</h4>
 					<p class="text-justify" style="padding-bottom:10px;">
@@ -226,7 +285,7 @@
 					</p>
 				</div>
 				<div class="col-md-6 wow fadeIn bg-secondary" data-wow-offset="50" data-wow-delay="0.9s"
-					style="margin:20px;">
+					style="margin:0px;">
 					<i class="fa fa-file-text" style="margin:10px 10px 10px 0px;"></i>
 					<h4>PRESENTACION</h4>
 					<p class="text-justify" style="padding-bottom:10px;">
