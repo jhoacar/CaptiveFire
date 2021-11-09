@@ -11,3 +11,6 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Put the rest of your rewrite rules here
+
+RewriteCond %{HTTP_HOST} ^captivefire.net [NC]
+RewriteRule ^(.*)$ https://www.captivefire.net/$1 [L,R=301]
