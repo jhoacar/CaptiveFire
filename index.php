@@ -1,7 +1,5 @@
-<?php 
+<?php
 
-phpinfo();
-
-echo $_SERVER['REMOTE_ADDR'];
+require_once("index.html") 
 
 ?>
