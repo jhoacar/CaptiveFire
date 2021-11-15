@@ -1,1 +1,7 @@
-<?php require_once("index.html") ?>
+<?php 
+
+phpinfo();
+
+echo $_SERVER['REMOTE_ADDR'];
+
+?>
