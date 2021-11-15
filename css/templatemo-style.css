@@ -181,6 +181,7 @@ header .social-icon li a {
 	height: 70px;
 	line-height: 40px;
 	color: white;
+	text-align: center;
 }
 .navbar-brand span{
 	color: white;
