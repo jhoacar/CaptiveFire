@@ -38,13 +38,15 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/templatemo-style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.singlePageNav.min.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/validator.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 
 <body id="inicio">
@@ -100,6 +102,7 @@
 					<li><a href="#servicio">Nuestro Servicio</a></li>
 					<li><a href="#implementacion">Como se implementa</a></li>
 					<li><a href="#nosotros">Sobre Nosotros</a></li>
+					<li><a href="#contacto">Contacto</a></li>
 				</ul>
 			</div>
 		</div>
@@ -329,6 +332,73 @@
 		</div>
 	</section>
 	<!-- end nosotros -->
+
+	
+	<!-- start contacto -->
+	<section id="contacto">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+						<span>CONTACTANOS</span>
+					</h2>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+					
+					<form id='contact-form' action="mail.php" method="post" data-toggle="validator">
+						
+						<div id='contact-form-result'></div>
+						
+						<div class='form-group'>
+							<label>NOMBRE</label>
+							<input type='text' class='form-control'
+								name='name' required>
+							<div class='help-block with-errors'></div>
+
+						</div>
+						<div class='form-group'>
+							<label>CORREO</label>
+							<input type='email' class='form-control' placeholder='ejemplo@ejemplo.com'
+								name='email' required>
+							<div class='help-block with-errors'></div>
+
+						</div>
+						<div class='form-group'>
+							<label>MENSAJE</label>
+							<textarea class='form-control' name='message' rows='5'
+								required></textarea>
+							<div class='help-block with-errors'></div>
+
+						</div>
+
+						<div class='form-group text-center'>
+							<button type='submit' class='btn-custom btn-color form-control'>
+								ENVIAR MENSAJE
+							</button>
+						</div>
+
+					</form>
+
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<address>
+						<p class="address-title">NUESTRA DIRECCIÓN</p>
+						<span>Buenos Aires, Argentina</span>
+						<p><i class="fa fa-phone"></i>11 68521059</p>
+						<p><i class="fa fa-envelope-o"></i> info@captivefire.net</p>
+					</address>
+					<ul class="social-icon">
+						<li>
+							<h4>REDES SOCIALES</h4>
+						</li>
+						<li><a href="https://facebook.com/captivefiree" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="https://instagram.com/captivefiree" class="fa fa-instagram" target="_blank"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact -->
 
 	<!-- start copyright -->
 	<footer id="copyright">
