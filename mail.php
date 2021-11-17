@@ -27,7 +27,7 @@
 		$formcontent="From: $name<br>Email: $email<br>Message: $message";
 		
 		//Place your Email Here
-		$recipient = "jhoancarrero123@gmail.com";
+		$recipient = "info@captivefire.net";
 		
          $curl = curl_init();
          curl_setopt_array($curl, array(
