@@ -1,5 +1,9 @@
 RewriteEngine On
 
+#If we receive a request from captivefire.net, we redirect to www.captivefire.net with HTTPS
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+
 # If we receive a forwarded http request from a proxy...
 RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
 
@@ -11,7 +15,3 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Put the rest of your rewrite rules here
-
-#If we receive a request from captivefire.net, we redirect to www.captivefire.net with HTTPS
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
