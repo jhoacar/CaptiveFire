@@ -15,8 +15,10 @@ a {
 	color: #47c6f8;
 }
 
-a:hover {
+a:hover , a:active, a:focus , a:link{
 	color: #0ff;
+	border: none;
+	outline: none;
 }
 
 /* start h2 */
@@ -143,7 +145,8 @@ header span{
 	padding-left: 4px;
 }
 header a, header a:hover{
-	color: #999;
+	/*color: #999;*/
+	color: white;
 	font-weight: 600;
 }
 header .social-icon {
@@ -184,6 +187,10 @@ header .social-icon li a {
 	color: white;
 	text-align: center;
 }
+.navbar-default .navbar-nav li a:hover{
+	color: #7ebcdd;
+}
+
 .navbar-brand span{
 	color: white;
 }
