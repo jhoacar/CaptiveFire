@@ -403,6 +403,9 @@ header .social-icon li a {
 	margin-top: 6px;
 	margin-bottom: 16px;
 }
+#contacto textarea{
+	resize: none;
+}
 #contacto label {
 	font-weight: 500;
 }
